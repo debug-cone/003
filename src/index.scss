@@ -1,0 +1,61 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  width: 80%;
+  margin: 0 auto;
+
+  &_logo {
+    border-radius: 20px;
+  }
+
+  &_menuItems {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+
+  &_menuItems_item {
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  &_buttons {
+    display: flex;
+    gap: 20px;
+  }
+
+  &_buttons .btn {
+    padding: 12px 24px;
+    border: none;
+    /* background-color: dodgerblue;
+    background-color: greenyellow; */
+    color: #fff;
+    border-radius: 15px;
+  }
+}
+
+.card {
+  width: 350px;
+  height: 500px;
+  // background-color: cadetblue;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
